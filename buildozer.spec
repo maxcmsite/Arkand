@@ -13,7 +13,7 @@ package.domain = com.arkand.maxcmsite
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py
+source.include_exts = py,mp3
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = assets/*,images
@@ -29,7 +29,7 @@ source.include_patterns = assets/*,images
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 3.0
+version = 4.0
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -44,7 +44,7 @@ requirements = pygame
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = /content/presplash.png
+presplash.filename = /content/presplash.png
 
 # (str) Icon of the application
 icon.filename = /content/logo.png
@@ -283,7 +283,7 @@ android.accept_sdk_license = True
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = armeabi-v7a, arm64-v8a, x86, x86_64-v7a
+android.archs = armeabi-v7a, arm64-v8a, x86, x86_64
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
