@@ -2,6 +2,7 @@ import pygame
 from random import randint
 from threading import Thread
 from time import sleep
+import os
 pygame.init()
 sc = pygame.display.set_mode()
 w, h = pygame.display.get_surface().get_size()
@@ -30,6 +31,7 @@ pl1=w*.5-pl_size*.5
 speed=1
 th1r=False
 start_game=False
+path=os.path.dirname(os.path.abspath(__file__))
 strt1='1 player'
 strt2='2 player'
 game1=False
@@ -40,8 +42,8 @@ clg1=0
 clb1=0
 clrad1=randint(0,2)
 print(clrad1)
-sound1=pygame.mixer.Sound('metal_ball_l01.mp3')
-sound2=pygame.mixer.Sound('asu.mp3')
+sound1=pygame.mixer.Sound(path+'/metal_ball_l01.mp3')
+sound2=pygame.mixer.Sound(path+'/asu.mp3')
 soundr=True
 soundt=0
 if clrad1==0:
